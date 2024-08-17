@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #e8ad0c, #f00909);
+    padding: 10px;
+    background-image: url(good.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+.to-do-list{
+    max-width: 540px;
+    background-color:#7f808a43 ;
+    color: black;
+    margin: 130px auto 20px; /* Top left-Right Buttom */
+    padding: 40px 30px 70px; /* Top left-Right Buttom */
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgb(17, 16, 16);
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px); 
+    font-size: 18px;
+    font: weight 50px; ;
+    /* position: relative; */
+}
+
+.to-do-list h2 {
+    /* color: #002765; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.to-do-list img{
+    width: 45px;
+    margin-left:10px ;
+   border-radius: 1rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: ); */
+    border: 1px solid white;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    color: #fff;
+
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    font-size: 20px;
+   color: #fff;
+    z-index: 1;
+}
+input::placeholder{
+    color: white;
+}
+
+
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+ul li {
+    list-style: none;
+    font-style: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    font-weight: 600;
+    border: 1px solid rgb(1, 2, 15);
+    transition: all 0.2s ease;
+    border-radius: 2rem;
+    margin-bottom: 5px;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(REviver.webp);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+ 
+}
+ul li.checked {
+    color: #555;
+    text-decoration:line-through;
+    background-color: #fff;
+   
+}
+ul li.checked::before{
+    background-image: url(blue.jpg);
+}
+ul li span {  
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px; 
+    text-align: center; 
+}
+
+/* ul li span:hover {
+
+} */
